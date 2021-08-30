@@ -18,8 +18,8 @@ jobs:
       WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
       GIST_ID: e1557da9d3f8b9cd196f5a392038a9df
-      GIST_BARSTYLE: SOLIDMD
-      GIST_BARLENGTH: 28
+      GIST_BARSTYLE: UNDERSCORE
+      GIST_BARLENGTH: 24
       GIST_TIMESTYLE: SHORT
 
     steps:
