@@ -41,7 +41,10 @@ func main() {
 	}
 
 	box := wakabox.NewBox(wakaAPIKey, ghUsername, ghToken, style)
-
+	fmt.Println("wakaapi-key:",wakaAPIKey)
+	fmt.Println("ghUsername-key:",ghUsername)
+	fmt.Println("ghToken-key:",ghToken)
+	fmt.Println("style-key:",style)
 	ctx := context.Background()
 	lines, err := box.GetStats(ctx)
 	if err != nil {
