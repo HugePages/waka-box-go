@@ -8,7 +8,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0/1 0 * * *"
+    - cron: "0/5 0 * * *"
 
 jobs:
   build:
@@ -19,8 +19,8 @@ jobs:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
       GIST_ID: e1557da9d3f8b9cd196f5a392038a9df
       GIST_BARSTYLE: SOLIDMD
-      GIST_BARLENGTH: -1
-      GIST_TIMESTYLE: LONG
+      GIST_BARLENGTH: 28
+      GIST_TIMESTYLE: SHORT
 
     steps:
       - name: Set up Go 1.x
